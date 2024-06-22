@@ -1,0 +1,43 @@
+/* *{
+    margin: 0;padding: 0;box-sizing: border-box;
+} */
+ body{
+    background-color: black;
+    color: azure;
+ }
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    padding: 50px;
+}
+h1{
+    font-size: 45px;
+}
+span{
+    color: rgb(255, 52, 69);
+}
+textarea{
+    width: 500px;
+    height: 200px;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+}
+button{
+    background-color: rgb(246, 27, 27);
+    cursor: pointer;
+    color: black;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    width: 80px;
+    height: 40px;border-radius: 15px;
+}
+
+

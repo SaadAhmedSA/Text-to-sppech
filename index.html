@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div id="main">
+    <div>
+        <h1>Text to Speech <Span>Converter</Span></h1>
+        <textarea name="text" id="textarea" cols="60" rows="10" placeholder="Write something here..."></textarea>
+        <button>listen</button>
+    </div>
+</div>
+
+<script>
+    let spech = new SpeechSynthesisUtterance()
+    document.querySelector("button").addEventListener("click",()=>{
+        spech.text=document.querySelector("textarea").value,
+        window.speechSynthesis.speak(spech)
+    })
+</script>
+
+</body>
+</html>
